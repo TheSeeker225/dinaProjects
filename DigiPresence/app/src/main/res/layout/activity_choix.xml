@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChoixActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="272dp"
+            android:layout_height="167dp"
+            app:srcCompat="@drawable/logo_digi_presence_ook_2000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choisissez une action"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_abs"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Absent(e)"
+            android:layout_marginRight="70dip"
+            />
+
+        <Button
+            android:id="@+id/btn_a"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Arrivée"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_dm"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Départ en mission"
+            android:layout_marginRight="70dip"
+            />
+
+        <Button
+            android:id="@+id/btn_am"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Arrivée de mission"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Départ en pause"
+            android:layout_marginRight="70dip"
+            />
+
+        <Button
+            android:id="@+id/btn_ap"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Arrivée de pause"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_dc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Départ en congé"
+            android:layout_marginRight="70dip"
+            />
+
+        <Button
+            android:id="@+id/btn_ac"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Arrivée de congé"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_d"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Départ" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright 2021 dinamikLab"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
