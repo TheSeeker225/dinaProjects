@@ -1,155 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ChoixActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="272dp"
-            android:layout_height="167dp"
-            app:srcCompat="@drawable/logo_digi_presence_ook_2000" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center">
-
-        <TextView
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Choisissez une action"
-            android:textAlignment="center"
-            android:textSize="30sp"/>
+            android:layout_height="273dp"
+            android:background="@drawable/black_bg">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/logo_digipresence_white"
+                android:contentDescription="@string/description_logo"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:text="@string/activity_choix_message"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:padding="@dimen/padding_title"
+                android:textSize="@dimen/size_title"/>
 
-        <Button
-            android:id="@+id/btn_abs"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="Absent(e)"
-            android:layout_marginRight="70dip"
-            />
+        </FrameLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_a"
-            android:layout_width="140dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Arrivée"/>
+            android:background="@android:color/white"
+            android:contentDescription="@string/bouton_arrivee"
+            android:src="@drawable/btn_arrivee"
+            tools:ignore="ImageContrastCheck" />
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center">
+            <ImageButton
+                android:id="@+id/btn_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dip"
+                android:background="@android:color/white"
+                android:contentDescription="@string/bouton_depart_pause"
+                android:src="@drawable/btn_depart_pause"
+                tools:ignore="ImageContrastCheck" />
 
-        <Button
-            android:id="@+id/btn_dm"
-            android:layout_width="120dp"
+            <ImageButton
+                android:id="@+id/btn_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:contentDescription="@string/bouton_arrivee_mission"
+                android:src="@drawable/btn_arrivee_pause"
+                tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_dm"
+                android:layout_marginEnd="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:src="@drawable/btn_depart_mission"
+                android:contentDescription="@string/bouton_depart_mission" />
+
+            <ImageButton
+                android:id="@+id/btn_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:src="@drawable/btn_arrivee_mission"
+                android:contentDescription="@string/bouton_arrivee_mission"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_dc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dip"
+                android:background="@android:color/white"
+                android:contentDescription="@string/bouton_depart_conge"
+                android:src="@drawable/btn_depart_conge"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btn_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:contentDescription="@string/bouton_arrivee_conge"
+                android:src="@drawable/btn_arrivee_conge"
+                tools:ignore="ImageContrastCheck" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_abs"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Départ en mission"
-            android:layout_marginRight="70dip"
-            />
+            android:background="@android:color/white"
+            android:contentDescription="@string/bouton_absent"
+            android:src="@drawable/btn_absent"
+            tools:ignore="ImageContrastCheck" />
 
-        <Button
-            android:id="@+id/btn_am"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:text="Arrivée de mission"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/btn_dp"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="Départ en pause"
-            android:layout_marginRight="70dip"
-            />
-
-        <Button
-            android:id="@+id/btn_ap"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:text="Arrivée de pause"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/btn_dc"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="Départ en congé"
-            android:layout_marginRight="70dip"
-            />
-
-        <Button
-            android:id="@+id/btn_ac"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:text="Arrivée de congé"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center">
-
-        <Button
+        <ImageButton
             android:id="@+id/btn_d"
-            android:layout_width="320dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Départ" />
+            android:background="@android:color/white"
+            android:contentDescription="@string/bouton_depart"
+            android:src="@drawable/btn_depart"
+            tools:ignore="ImageContrastCheck" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="13.7dp">
 
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Copyright 2021 dinamikLab"
-            android:textAlignment="center"
-            />
+            android:gravity="center_horizontal"
+            android:text="@string/copyright"
+            android:textColor="#757575"
+            android:textSize="13.3sp" />
+
     </LinearLayout>
 
-
-</LinearLayout>
+</RelativeLayout>

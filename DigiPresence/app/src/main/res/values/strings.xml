@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">DigiPresence</string>
+
+
+    <string name="description_logo"> Logo DigiPresence </string>
+    <string name="icon_id"> Logo DigiPresence </string>
+    <string name="matricule_hint"> Entrer votre matricule ici ! </string>
+    <string name="txt_btn_valider"> Valider </string>
+
+
+    <string name="copyright">Copyright 2021 dinamik LAB </string>
+    <string name="activity_choix_message">Veuillez choisir une action !</string>
+    <string name="bouton_depart_mission">Bouton Départ Mission</string>
+    <string name="bouton_arrivee_mission">Bouton Arrivée Mission</string>
+    <string name="bouton_arrivee">Bouton Arrivée</string>
+    <string name="bouton_arrivee_pause">Bouton Arrivée Pause</string>
+    <string name="bouton_depart_pause">Bouton Départ Pause</string>
+    <string name="bouton_depart">Bouton Départ</string>
+    <string name="bouton_absent">Bouton Absent</string>
+    <string name="bouton_arrivee_conge">Bouton Arrivée Congé</string>
+    <string name="bouton_depart_conge">Bouton Départ Congé</string>
+    <string name="icon_matricule">QR Code</string>
 </resources>

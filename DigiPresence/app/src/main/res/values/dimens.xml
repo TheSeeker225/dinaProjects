@@ -1,0 +1,22 @@
+<resources>
+    <!-- TextViews -->
+    <dimen name="size_title">23sp</dimen>
+    <dimen name="size_title_tablet">25sp</dimen>
+    <dimen name="size_title_tablet_land">32sp</dimen>
+
+
+    <dimen name="margin_start_for_nexus_9">160sp</dimen>
+    <dimen name="padding_title">7dip</dimen>
+    <dimen name="padding_title_tablet">16dip</dimen>
+    <!-- Images -->
+    <dimen name="size_image_height">200dip</dimen>
+    <dimen name="size_image_width">@dimen/size_image_height</dimen>
+
+    <!--dimes for design 3-->
+    <dimen name="headerTextSize">22sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginCardRadius">20dp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="signup_text_margin_top">10dp</dimen>
+</resources>

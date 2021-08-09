@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+    <!-- Block 1 prenant la première moitié de l'écran (propriété layout_weight) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/black_bg"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_digipresence_white_xxhdpi"
+            android:contentDescription="@string/description_logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/activity_choix_message"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_title_tablet_land"/>
+
+
+    </LinearLayout>
+
+    <!-- Block 2 prenant la deuxième moitié de l'écran -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:contentDescription="@string/bouton_arrivee"
+            android:src="@drawable/btn_arrivee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dip"
+                android:background="@android:color/white"
+                android:contentDescription="@string/bouton_depart_pause"
+                android:src="@drawable/btn_depart_pause"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btn_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:contentDescription="@string/bouton_arrivee_mission"
+                android:src="@drawable/btn_arrivee_pause"
+                tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-65dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_dm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dip"
+                android:background="@android:color/white"
+                android:src="@drawable/btn_depart_mission"
+                android:contentDescription="@string/bouton_depart_mission" />
+
+            <ImageButton
+                android:id="@+id/btn_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:src="@drawable/btn_arrivee_mission"
+                android:contentDescription="@string/bouton_arrivee_mission"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="-65dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_dc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dip"
+                android:background="@android:color/white"
+                android:contentDescription="@string/bouton_depart_conge"
+                android:src="@drawable/btn_depart_conge"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btn_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:contentDescription="@string/bouton_arrivee_conge"
+                android:src="@drawable/btn_arrivee_conge"
+                tools:ignore="ImageContrastCheck" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_abs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:background="@android:color/white"
+            android:contentDescription="@string/bouton_absent"
+            android:src="@drawable/btn_absent"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:contentDescription="@string/bouton_depart"
+            android:src="@drawable/btn_depart"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/copyright"
+            android:textColor="#757575"
+            android:textSize="13.3sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

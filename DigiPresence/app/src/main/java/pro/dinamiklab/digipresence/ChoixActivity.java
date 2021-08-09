@@ -11,7 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class ChoixActivity extends AppCompatActivity {
@@ -59,15 +59,15 @@ public class ChoixActivity extends AppCompatActivity {
         return phoneNumber;
     }
 
-    Button btnAbs;
-    Button btnA;
-    Button btnDM;
-    Button btnAM;
-    Button btnDP;
-    Button btnAP;
-    Button btnDC;
-    Button btnAC;
-    Button btnD;
+    ImageButton btnAbsent;
+    ImageButton btnArrivee;
+    ImageButton btnDepartMission;
+    ImageButton btnArriveeMission;
+    ImageButton btnDepartPause;
+    ImageButton btnArriveePause;
+    ImageButton btnDepartConge;
+    ImageButton btnArriveeConge;
+    ImageButton btnDepart;
 
 
 
@@ -78,67 +78,67 @@ public class ChoixActivity extends AppCompatActivity {
 
         this.setStrMatricule( getIntent().getStringExtra("Matricule") );
 
-        btnDC = findViewById(R.id.btn_dc);
-        btnDP = findViewById(R.id.btn_dp);
-        btnDM = findViewById(R.id.btn_dm);
+        btnDepartConge = findViewById(R.id.btn_dc);
+        btnDepartPause = findViewById(R.id.btn_dp);
+        btnDepartMission = findViewById(R.id.btn_dm);
 
-        btnAC = findViewById(R.id.btn_ac);
-        btnAM = findViewById(R.id.btn_am);
-        btnAP = findViewById(R.id.btn_ap);
+        btnArriveeConge = findViewById(R.id.btn_ac);
+        btnArriveeMission = findViewById(R.id.btn_am);
+        btnArriveePause = findViewById(R.id.btn_ap);
 
-        btnA = findViewById(R.id.btn_a);
-        btnD = findViewById(R.id.btn_d);
-        btnAbs = findViewById(R.id.btn_abs);
+        btnArrivee = findViewById(R.id.btn_a);
+        btnDepart = findViewById(R.id.btn_d);
+        btnAbsent = findViewById(R.id.btn_abs);
 
-        btnAbs.setOnClickListener(new View.OnClickListener() {
+        btnAbsent.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("abs");
             }
         });
 
-        btnA.setOnClickListener(new View.OnClickListener() {
+        btnArrivee.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("a");
             }
         });
 
-        btnDM.setOnClickListener(new View.OnClickListener() {
+        btnDepartMission.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("dm");
             }
         });
 
-        btnAM.setOnClickListener(new View.OnClickListener() {
+        btnArriveeMission.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("am");
             }
         });
 
-        btnDP.setOnClickListener(new View.OnClickListener() {
+        btnDepartPause.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("dp");
             }
         });
 
-        btnAP.setOnClickListener(new View.OnClickListener() {
+        btnArriveePause.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("ap");
             }
         });
 
-        btnDC.setOnClickListener(new View.OnClickListener() {
+        btnDepartConge.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("dc");
             }
         });
 
-        btnAC.setOnClickListener(new View.OnClickListener() {
+        btnArriveeConge.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("ac");
             }
         });
 
-        btnD.setOnClickListener(new View.OnClickListener() {
+        btnDepart.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 smsSendMessage("d");
             }
