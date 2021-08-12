@@ -11,7 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class ChoixActivity extends AppCompatActivity {
@@ -59,15 +59,15 @@ public class ChoixActivity extends AppCompatActivity {
         return phoneNumber;
     }
 
-    ImageButton btnAbsent;
-    ImageButton btnArrivee;
-    ImageButton btnDepartMission;
-    ImageButton btnArriveeMission;
-    ImageButton btnDepartPause;
-    ImageButton btnArriveePause;
-    ImageButton btnDepartConge;
-    ImageButton btnArriveeConge;
-    ImageButton btnDepart;
+    Button btnAbsent;
+    Button btnArrivee;
+    Button btnDepartMission;
+    Button btnArriveeMission;
+    Button btnDepartPause;
+    Button btnArriveePause;
+    Button btnDepartConge;
+    Button btnArriveeConge;
+    Button btnDepart;
 
 
 
