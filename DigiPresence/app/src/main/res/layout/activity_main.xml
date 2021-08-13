@@ -15,7 +15,7 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="273dp"
+            android:layout_height="200dp"
             android:background="@drawable/black_bg">
 
             <ImageView
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="62dp"
             android:layout_marginRight="62dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="80dp"
             android:background="@drawable/purple_border_rounded">
 
             <!-- INPUT -->

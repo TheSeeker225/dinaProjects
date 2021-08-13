@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ChoixActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,17 +21,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:src="@drawable/logo_digipresence_white_xxhdpi"
-                android:contentDescription="@string/description_logo"/>
+                android:contentDescription="@string/description_logo"
+                android:src="@drawable/logo_digipresence_white_xxhdpi" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="140dp"
                 android:text="@string/activity_choix_message"
-                android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:textSize="@dimen/size_title_tablet"/>
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_title_tablet" />
 
         </FrameLayout>
 
@@ -40,13 +40,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/green_fill_rounded_color"
-            android:text="Arrivée"
             android:layout_marginVertical="20dp"
-            android:textSize="32sp"
-            android:paddingVertical="8dp"
+            android:background="@drawable/green_fill_rounded_color"
             android:paddingHorizontal="220dp"
-            android:textColor="@android:color/white" />
+            android:paddingVertical="8dp"
+            android:text="@string/bouton_text_arriv_e"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,30 +56,33 @@
 
             <Button
                 android:id="@+id/btn_dp"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/orange_fill_rounded_color"
-                android:text="Départ Pause"
                 android:layout_marginVertical="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/orange_fill_rounded_color"
                 android:paddingHorizontal="36dp"
                 android:paddingVertical="8dp"
+                android:text="@string/bouton_text_d_part_pause"
+                android:textColor="@android:color/white"
                 android:textSize="28sp"
-                android:textColor="@android:color/white" />
+                tools:ignore="TextContrastCheck" />
 
             <Button
                 android:id="@+id/btn_ap"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/orange_fill_rounded_color"
-                android:text="Arrivée Pause"
                 android:layout_marginVertical="20dp"
+                android:background="@drawable/orange_fill_rounded_color"
                 android:paddingHorizontal="36dp"
                 android:paddingVertical="8dp"
-                android:textSize="28sp"
-                android:textColor="@android:color/white" />
+                android:text="@string/bouton_text_arriv_e_pause"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
 
         </LinearLayout>
 
@@ -91,30 +94,32 @@
 
             <Button
                 android:id="@+id/btn_dm"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/purple_fill_rounded_color"
-                android:text="Départ Mission"
                 android:layout_marginVertical="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/purple_fill_rounded_color"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="8dp"
-                android:textSize="28sp"
-                android:textColor="@android:color/white" />
+                android:text="@string/bouton_text_d_part_mission"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn_am"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/purple_fill_rounded_color"
-                android:text="Arrivée Mission"
                 android:layout_marginVertical="20dp"
+                android:background="@drawable/purple_fill_rounded_color"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="8dp"
-                android:textSize="28sp"
-                android:textColor="@android:color/white" />
+                android:text="@string/bouton_text_arriv_e_mission"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
 
         </LinearLayout>
 
@@ -126,30 +131,32 @@
 
             <Button
                 android:id="@+id/btn_dc"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/bluesky_fill_rounded_color"
-                android:text="Départ Conge"
                 android:layout_marginVertical="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/bluesky_fill_rounded_color"
                 android:paddingHorizontal="28dp"
                 android:paddingVertical="8dp"
-                android:textSize="28sp"
-                android:textColor="@android:color/white" />
+                android:text="@string/bouton_text_d_part_conge"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn_ac"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/bluesky_fill_rounded_color"
-                android:text="Arrivée Congé"
                 android:layout_marginVertical="20dp"
+                android:background="@drawable/bluesky_fill_rounded_color"
                 android:paddingHorizontal="28dp"
                 android:paddingVertical="8dp"
-                android:textSize="28sp"
-                android:textColor="@android:color/white" />
+                android:text="@string/bouton_text_arriv_e_cong"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
 
         </LinearLayout>
 
@@ -158,13 +165,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/red_fill_rounded_color"
-            android:text="Absent(e)"
             android:layout_marginVertical="20dp"
-            android:textSize="32sp"
-            android:paddingVertical="8dp"
+            android:background="@drawable/red_fill_rounded_color"
             android:paddingHorizontal="200dp"
-            android:textColor="@android:color/white" />
+            android:paddingVertical="8dp"
+            android:text="@string/bouton_text_absent_e"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
 
         <Button
             android:id="@+id/btn_d"
@@ -172,11 +179,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/blue_fill_rounded_color"
-            android:text="Départ"
-            android:textSize="32sp"
-            android:paddingVertical="8dp"
             android:paddingHorizontal="220dp"
-            android:textColor="@android:color/white" />
+            android:paddingVertical="8dp"
+            android:text="@string/bouton_text_d_part"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
 
     </LinearLayout>
 
@@ -194,7 +201,8 @@
             android:gravity="center_horizontal"
             android:text="@string/copyright"
             android:textColor="#757575"
-            android:textSize="13.3sp" />
+            android:textSize="13.3sp"
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 

@@ -20,4 +20,13 @@
     <string name="bouton_arrivee_conge">Bouton Arrivée Congé</string>
     <string name="bouton_depart_conge">Bouton Départ Congé</string>
     <string name="icon_matricule">QR Code</string>
+    <string name="bouton_text_arriv_e_cong">Arrivée Congé</string>
+    <string name="bouton_text_d_part_conge">Départ Conge</string>
+    <string name="bouton_text_d_part">Départ</string>
+    <string name="bouton_text_absent_e">Absent(e)</string>
+    <string name="bouton_text_arriv_e_mission">Arrivée Mission</string>
+    <string name="bouton_text_arriv_e_pause">Arrivée Pause</string>
+    <string name="bouton_text_d_part_pause">Départ Pause</string>
+    <string name="bouton_text_d_part_mission">Départ Mission</string>
+    <string name="bouton_text_arriv_e">Arrivée</string>
 </resources>

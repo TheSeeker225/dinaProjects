@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ChoixActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="273dp"
+            android:layout_height="240dp"
             android:background="@drawable/black_bg">
 
             <ImageView
@@ -36,39 +36,49 @@
 
         </FrameLayout>
 
-        <ImageButton
+        <Button
             android:id="@+id/btn_a"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:contentDescription="@string/bouton_arrivee"
-            android:src="@drawable/btn_arrivee"
-            tools:ignore="ImageContrastCheck" />
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/green_fill_rounded_color"
+            android:text="@string/bouton_text_arriv_e"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:paddingHorizontal="120dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:layout_marginVertical="8dp"
             android:gravity="center">
 
-            <ImageButton
+            <Button
                 android:id="@+id/btn_dp"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dip"
-                android:background="@android:color/white"
-                android:contentDescription="@string/bouton_depart_pause"
-                android:src="@drawable/btn_depart_pause"
-                tools:ignore="ImageContrastCheck" />
+                android:layout_gravity="center"
+                android:background="@drawable/orange_fill_rounded_color"
+                android:paddingHorizontal="24dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="16sp"
+                android:text="@string/bouton_text_d_part_pause"
+                android:textColor="@android:color/white" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/btn_ap"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:contentDescription="@string/bouton_arrivee_mission"
-                android:src="@drawable/btn_arrivee_pause"
-                tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+                android:layout_gravity="center"
+                android:background="@drawable/orange_fill_rounded_color"
+                android:paddingHorizontal="24dp"
+                android:textSize="16sp"
+                android:text="@string/bouton_text_arriv_e_pause"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
@@ -76,24 +86,33 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:layout_marginVertical="8dp"
             android:gravity="center">
 
-            <ImageButton
+            <Button
                 android:id="@+id/btn_dm"
-                android:layout_marginEnd="10dip"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:src="@drawable/btn_depart_mission"
-                android:contentDescription="@string/bouton_depart_mission" />
+                android:layout_gravity="center"
+                android:background="@drawable/purple_fill_rounded_color"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="12dp"
+                android:textSize="16sp"
+                android:text="@string/bouton_text_d_part_mission"
+                android:textColor="@android:color/white" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/btn_am"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:src="@drawable/btn_arrivee_mission"
-                android:contentDescription="@string/bouton_arrivee_mission"/>
+                android:layout_gravity="center"
+                android:background="@drawable/purple_fill_rounded_color"
+                android:paddingHorizontal="16dp"
+                android:textSize="16sp"
+                android:text="@string/bouton_text_arriv_e_mission"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
@@ -103,44 +122,55 @@
             android:layout_weight="1"
             android:gravity="center">
 
-            <ImageButton
+            <Button
                 android:id="@+id/btn_dc"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dip"
-                android:background="@android:color/white"
-                android:contentDescription="@string/bouton_depart_conge"
-                android:src="@drawable/btn_depart_conge"
-                tools:ignore="ImageContrastCheck" />
+                android:layout_gravity="center"
+                android:background="@drawable/bluesky_fill_rounded_color"
+                android:paddingHorizontal="20dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="16sp"
+                android:text="@string/bouton_text_d_part_conge"
+                android:textColor="@android:color/white" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/btn_ac"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:contentDescription="@string/bouton_arrivee_conge"
-                android:src="@drawable/btn_arrivee_conge"
-                tools:ignore="ImageContrastCheck" />
+                android:layout_gravity="center"
+                android:background="@drawable/bluesky_fill_rounded_color"
+                android:paddingHorizontal="20dp"
+                android:textSize="16sp"
+                android:text="@string/bouton_text_arriv_e_cong"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
-        <ImageButton
+        <Button
             android:id="@+id/btn_abs"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:contentDescription="@string/bouton_absent"
-            android:src="@drawable/btn_absent"
-            tools:ignore="ImageContrastCheck" />
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/red_fill_rounded_color"
+            android:text="@string/bouton_text_absent_e"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:paddingHorizontal="105dp" />
 
-        <ImageButton
+        <Button
             android:id="@+id/btn_d"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:contentDescription="@string/bouton_depart"
-            android:src="@drawable/btn_depart"
-            tools:ignore="ImageContrastCheck" />
+            android:layout_gravity="center"
+            android:background="@drawable/blue_fill_rounded_color"
+            android:text="@string/bouton_text_d_part"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:paddingHorizontal="120dp"/>
 
     </LinearLayout>
 
