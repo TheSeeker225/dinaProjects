@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,7 +20,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="40dp"
                 android:contentDescription="@string/description_logo"
                 android:src="@drawable/logo_digipresence_white_xxhdpi" />
 
@@ -40,13 +40,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginVertical="20dp"
-            android:background="@drawable/green_fill_rounded_color"
-            android:paddingHorizontal="220dp"
-            android:paddingVertical="8dp"
-            android:text="@string/bouton_text_arriv_e"
-            android:textColor="@android:color/white"
-            android:textSize="32sp" />
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/activity_choix_btn_arrivee"
+            android:paddingHorizontal="240dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,29 +57,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/orange_fill_rounded_color"
-                android:paddingHorizontal="36dp"
-                android:paddingVertical="8dp"
-                android:text="@string/bouton_text_d_part_pause"
-                android:textColor="@android:color/white"
-                android:textSize="28sp"
-                tools:ignore="TextContrastCheck" />
+                android:background="@drawable/activity_choix_btn_depart_pause"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/btn_ap"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:background="@drawable/orange_fill_rounded_color"
-                android:paddingHorizontal="36dp"
-                android:paddingVertical="8dp"
-                android:text="@string/bouton_text_arriv_e_pause"
-                android:textColor="@android:color/white"
-                android:textSize="28sp" />
+                android:background="@drawable/activity_choix_btn_arrivee_pause"
+                tools:ignore="SpeakableTextPresentCheck"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
@@ -98,14 +83,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/purple_fill_rounded_color"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="8dp"
-                android:text="@string/bouton_text_d_part_mission"
-                android:textColor="@android:color/white"
-                android:textSize="28sp" />
+                android:background="@drawable/activity_choix_btn_depart_mission"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/btn_am"
@@ -113,13 +92,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:background="@drawable/purple_fill_rounded_color"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="8dp"
-                android:text="@string/bouton_text_arriv_e_mission"
-                android:textColor="@android:color/white"
-                android:textSize="28sp" />
+                android:background="@drawable/activity_choix_btn_arrivee_mission"
+                android:textSize="28sp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
@@ -135,14 +110,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/bluesky_fill_rounded_color"
-                android:paddingHorizontal="28dp"
-                android:paddingVertical="8dp"
-                android:text="@string/bouton_text_d_part_conge"
-                android:textColor="@android:color/white"
-                android:textSize="28sp" />
+                android:background="@drawable/activity_choix_btn_depart_conge"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/btn_ac"
@@ -150,13 +119,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:background="@drawable/bluesky_fill_rounded_color"
-                android:paddingHorizontal="28dp"
-                android:paddingVertical="8dp"
-                android:text="@string/bouton_text_arriv_e_cong"
-                android:textColor="@android:color/white"
-                android:textSize="28sp" />
+                android:background="@drawable/activity_choix_btn_arrivee_conge"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
@@ -165,45 +129,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginVertical="20dp"
-            android:background="@drawable/red_fill_rounded_color"
-            android:paddingHorizontal="200dp"
-            android:paddingVertical="8dp"
-            android:text="@string/bouton_text_absent_e"
-            android:textColor="@android:color/white"
-            android:textSize="32sp" />
+            android:background="@drawable/activity_choix_btn_absent"
+            android:paddingHorizontal="240dp"
+            android:textSize="32sp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btn_d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/blue_fill_rounded_color"
-            android:paddingHorizontal="220dp"
-            android:paddingVertical="8dp"
-            android:text="@string/bouton_text_d_part"
-            android:textColor="@android:color/white"
-            android:textSize="32sp" />
+            android:background="@drawable/activity_choix_btn_depart"
+            android:paddingHorizontal="240dp"
+            android:textSize="32sp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:layout_marginBottom="13.7dp">
-
-
-        <TextView
-            android:layout_width="wrap_content"
+    <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
+            android:layout_marginVertical="12dp"
             android:text="@string/copyright"
-            android:textColor="#757575"
-            android:textSize="13.3sp"
-            tools:ignore="TextContrastCheck" />
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
 
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>
