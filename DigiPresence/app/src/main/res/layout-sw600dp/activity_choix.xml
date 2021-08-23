@@ -14,145 +14,195 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="400dp"
             android:background="@drawable/black_bg">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:contentDescription="@string/description_logo"
-                android:src="@drawable/logo_digipresence_white_xxhdpi" />
+                android:layout_marginTop="80dp"
+                android:src="@drawable/logo_digipresence_white"
+                android:contentDescription="@string/description_logo"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="200dp"
                 android:text="@string/activity_choix_message"
-                android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/size_title_tablet" />
+                android:textAlignment="center"
+                android:padding="@dimen/padding_title"
+                android:textSize="28dp"/>
 
         </FrameLayout>
 
+
         <Button
             android:id="@+id/btn_a"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
             android:layout_gravity="center"
-            android:layout_marginVertical="8dp"
-            android:background="@drawable/activity_choix_btn_arrivee"
-            android:paddingHorizontal="240dp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:gravity="center"
+            android:paddingVertical="24dp"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/bouton_text_arriv_e"
+            android:background="@drawable/green_fill_rounded_color"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:gravity="center">
 
             <Button
                 android:id="@+id/btn_dp"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
                 android:layout_gravity="center"
-                android:background="@drawable/activity_choix_btn_depart_pause"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:gravity="center"
+                android:paddingVertical="32dp"
+                android:paddingHorizontal="64dp"
+                android:layout_marginEnd="52dp"
+                android:text="@string/bouton_text_d_part_pause"
+                android:background="@drawable/orange_fill_rounded_color"/>
+
 
             <Button
                 android:id="@+id/btn_ap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
                 android:layout_gravity="center"
-                android:background="@drawable/activity_choix_btn_arrivee_pause"
-                tools:ignore="SpeakableTextPresentCheck"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:gravity="center"
+                android:paddingVertical="32dp"
+                android:paddingHorizontal="64dp"
+                android:text="@string/bouton_text_arriv_e_pause"
+                android:background="@drawable/orange_fill_rounded_color"/>
+
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="80dp"
+            android:layout_marginVertical="8dp"
             android:layout_weight="1"
             android:gravity="center">
 
             <Button
                 android:id="@+id/btn_dm"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
                 android:layout_gravity="center"
-                android:background="@drawable/activity_choix_btn_depart_mission"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:gravity="center"
+                android:paddingVertical="32dp"
+                android:paddingHorizontal="64dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/bouton_text_d_part_mission"
+                android:background="@drawable/purple_fill_rounded_color"/>
+
 
             <Button
                 android:id="@+id/btn_am"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
                 android:layout_gravity="center"
-                android:background="@drawable/activity_choix_btn_arrivee_mission"
-                android:textSize="28sp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:gravity="center"
+                android:paddingVertical="32dp"
+                android:paddingHorizontal="64dp"
+                android:text="@string/bouton_text_arriv_e_mission"
+                android:background="@drawable/purple_fill_rounded_color"/>
+
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="80dp"
+            android:layout_marginVertical="8dp"
             android:layout_weight="1"
             android:gravity="center">
 
             <Button
                 android:id="@+id/btn_dc"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
                 android:layout_gravity="center"
-                android:background="@drawable/activity_choix_btn_depart_conge"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:gravity="center"
+                android:paddingVertical="32dp"
+                android:paddingHorizontal="64dp"
+                android:layout_marginEnd="44dp"
+                android:text="@string/bouton_text_d_part_conge"
+                android:background="@drawable/bluesky_fill_rounded_color"/>
+
 
             <Button
                 android:id="@+id/btn_ac"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
                 android:layout_gravity="center"
-                android:background="@drawable/activity_choix_btn_arrivee_conge"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:gravity="center"
+                android:paddingVertical="32dp"
+                android:paddingHorizontal="64dp"
+                android:text="@string/bouton_text_arriv_e_pause"
+                android:background="@drawable/bluesky_fill_rounded_color"/>
+
 
         </LinearLayout>
 
         <Button
             android:id="@+id/btn_abs"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
             android:layout_gravity="center"
-            android:background="@drawable/activity_choix_btn_absent"
-            android:paddingHorizontal="240dp"
-            android:textSize="32sp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            android:gravity="center"
+            android:paddingVertical="24dp"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginVertical="12dp"
+            android:text="@string/bouton_text_absent_e"
+            android:background="@drawable/red_fill_rounded_color"/>
 
         <Button
             android:id="@+id/btn_d"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
             android:layout_gravity="center"
-            android:background="@drawable/activity_choix_btn_depart"
-            android:paddingHorizontal="240dp"
-            android:textSize="32sp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:gravity="center"
+            android:paddingVertical="24dp"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginVertical="12dp"
+            android:text="@string/bouton_text_d_part"
+            android:background="@drawable/blue_fill_rounded_color"/>
+
 
     </LinearLayout>
 
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="12dp"
-            android:text="@string/copyright"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="48dp"
+        android:text="@string/copyright"
+        android:textColor="#757575"
+        android:textSize="12sp" />
 
 </LinearLayout>
